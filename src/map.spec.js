@@ -8,13 +8,13 @@ describe('Map', () => {
         expect(map([], cube)).toEqual([]);
     })
 
-    it('should return the same list when identity function is passed', () => {
+    it('should return the same list when the identity function is passed', () => {
         const identity = (number) => number;
 
         expect(map([1,2,3], identity)).toEqual([1,2,3]);
     })
 
-    it('shoudl return cube valued list when cube function is passed', () => {
+    it('shoudl return cube valued list when the cube function is passed', () => {
         const cube = (number) => number ** 3;
 
         expect(map([1,2,3], cube)).toEqual([1,8,27])

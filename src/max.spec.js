@@ -6,7 +6,7 @@ describe("Max", () => {
         expect(max([])).toEqual(undefined);
     })
 
-    it('should return 4 when list is passed', () => {
+    it('should return the maximum element 4 when list is passed', () => {
         expect(max([1,2,3,4])).toEqual(4);
     })
 
